@@ -1,0 +1,1326 @@
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x0fd8c500 EBX:0x004054f2 ECX:0x00000000
+EDX:0x0fd8c500 ESI:0x0018d3c8 EDI:0x0e220348
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x0fdbc500 EBX:0x004054f2 ECX:0x00000000
+EDX:0x0fdbc500 ESI:0x0018d3c8 EDI:0x0e250348
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x0fd4c500 EBX:0x004054f2 ECX:0x00000000
+EDX:0x0fd4c500 ESI:0x0018d3c8 EDI:0x0e1e0348
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x1099d130 EBX:0x004054f2 ECX:0x00000000
+EDX:0x1099d130 ESI:0x0018d3c8 EDI:0x0e2a0348
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x0fe60670 EBX:0x004054f2 ECX:0x00000000
+EDX:0x0fe60670 ESI:0x0018d3c8 EDI:0x0e262d00
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x0fd80670 EBX:0x004054f2 ECX:0x00000000
+EDX:0x0fd80670 ESI:0x0018d3c8 EDI:0x0e242d00
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x10d30c88 EBX:0x004054f2 ECX:0x00000000
+EDX:0x10d30c88 ESI:0x0018d3c8 EDI:0x0e5a4078
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x10970c88 EBX:0x004054f2 ECX:0x00000000
+EDX:0x10970c88 ESI:0x0018d3c8 EDI:0x0e2e4078
+EIP:0x009b864e ESP:0x0018ca54 EBP:0x0018ca5c
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9f4 DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 0000000000d91ec503c0 -24.640062
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+31004 CallNextHookEx+383
+(unknown)(0): USER32.dll+37469 GetWindowThreadProcessId+991
+(unknown)(0): USER32.dll+31949 CallNextHookEx+1328
+(unknown)(0): USER32.dll+87107 UnregisterClassW+324
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+87449 UnregisterClassW+666
+(unknown)(0): USER32.dll+64161 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+102815 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x100e0c58 EBX:0x004054f2 ECX:0x00000000
+EDX:0x100e0c58 ESI:0x0018d408 EDI:0x0e4a1ea8
+EIP:0x009b864e ESP:0x0018caa4 EBP:0x0018caac
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018ca44 DataSel: 0x0000002b
+Cr0NpxState: 0x00001fa0
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000000ad7a302c0 -10.240000
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 00000000000000e00240 14.000000
+ST(5) 0000000000000080ff3f 1.000000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+165187 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+371817 RtlInitializeExceptionChain+133
+(unknown)(0): ntdll.dll+371772 RtlInitializeExceptionChain+88
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x10210df8 EBX:0x004054f2 ECX:0x00000000
+EDX:0x10210df8 ESI:0x0018d408 EDI:0x0e4d1e68
+EIP:0x009b864e ESP:0x0018caa4 EBP:0x0018caac
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018ca44 DataSel: 0x0000002b
+Cr0NpxState: 0x00001fa0
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000000ad7a302c0 -10.240000
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 00000000000000e00240 14.000000
+ST(5) 0000000000000080ff3f 1.000000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+165187 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+371817 RtlInitializeExceptionChain+133
+(unknown)(0): ntdll.dll+371772 RtlInitializeExceptionChain+88
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x10220df8 EBX:0x004054f2 ECX:0x00000000
+EDX:0x10220df8 ESI:0x0018d408 EDI:0x0e4d1e68
+EIP:0x009b864e ESP:0x0018caa4 EBP:0x0018caac
+Flags:%00000000000000010000001000000010
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018ca44 DataSel: 0x0000002b
+Cr0NpxState: 0x00001fa0
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000000ad7a302c0 -10.240000
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 00000000000000e00240 14.000000
+ST(5) 0000000000000080ff3f 1.000000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+30680 gapfnScSendMessage+1248
+(unknown)(0): USER32.dll+37095 GetAncestor+679
+(unknown)(0): USER32.dll+31599 PeekMessageW+492
+(unknown)(0): USER32.dll+53368 DestroyWindow+218
+(unknown)(0): ntdll.dll+274178 KiUserCallbackDispatcher+46
+(unknown)(0): USER32.dll+53656 DestroyWindow+506
+(unknown)(0): USER32.dll+79403 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+165187 BaseThreadInitThunk+14
+(unknown)(0): ntdll.dll+371817 RtlInitializeExceptionChain+133
+(unknown)(0): ntdll.dll+371772 RtlInitializeExceptionChain+88
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x106de2a0 EBX:0x004054f2 ECX:0x00000000
+EDX:0x106de2a0 ESI:0x0018d3b8 EDI:0x0eaefee8
+EIP:0x009b864e ESP:0x0018ca3c EBP:0x0018ca44
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9dc DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000006d09c102c0 -12.064801
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 00000000002771c503c0 -24.680250
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+36465 CallNextHookEx+177
+(unknown)(0): USER32.dll+44797 GetAncestor+461
+(unknown)(0): USER32.dll+37676 CallNextHookEx+1388
+(unknown)(0): USER32.dll+71352 GetCapture+696
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+72353 GetCapture+1697
+(unknown)(0): USER32.dll+78743 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+36465 CallNextHookEx+177
+(unknown)(0): USER32.dll+44797 GetAncestor+461
+(unknown)(0): USER32.dll+37676 CallNextHookEx+1388
+(unknown)(0): USER32.dll+71352 GetCapture+696
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+72353 GetCapture+1697
+(unknown)(0): USER32.dll+78743 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+97284 BaseThreadInitThunk+36
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000014 was written to.
+
+Exception occured at
+7746e193 ntdll.dll+0x1e193, RtlInterlockedPushEntrySList+0x483.
+
+Version: internal
+
+EAX:0x00000000 EBX:0x00001988 ECX:0xfffffffc
+EDX:0x00000000 ESI:0x022b77c0 EDI:0x00000000
+EIP:0x7746e193 ESP:0x0018fcd0 EBP:0x0018fd30
+Flags:%00000000000000010000001000010011
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100000
+TW:%1111111111111111
+ErrOfs:      0x016c3647 ErrSel:  0x00000023
+DataOfs:     0x0018d258 DataSel: 0x0000002b
+Cr0NpxState: 0x00003fff
+ST(0) 00000000000000000000 0.000000
+ST(1) 00000000000000000000 0.000000
+ST(2) 0000000000000080ff3f 1.000000
+ST(3) 00000000000000900440 36.000000
+ST(4) 00000000000000900340 18.000000
+ST(5) 000000000000409c0a40 2500.000000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000000000000000 0.000000
+
+10 addresses:
+(unknown)(0): ntdll.dll+123283 RtlInterlockedPushEntrySList+1155
+(unknown)(0): ntdll.dll+122939 RtlInterlockedPushEntrySList+811
+(unknown)(0): ntdll.dll+122981 RtlInterlockedPushEntrySList+853
+(unknown)(0): Worldbuilder.exe+5947077 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1767461
+(unknown)(0): Worldbuilder.exe+7436079 FXParticleSystem::ParticleSystemTemplate::createSlaveSystem+1375
+(unknown)(0): Worldbuilder.exe+4173257 FXParticleSystem::CategoryModuleInfo<6>::operator=+393
+(unknown)(0): Worldbuilder.exe+4173119 FXParticleSystem::CategoryModuleInfo<6>::operator=+255
+(unknown)(0): Worldbuilder.exe+2764977 IRegion2D::operator=+2712926
+(unknown)(0): Worldbuilder.exe+2764847 IRegion2D::operator=+2712796
+(unknown)(0): Worldbuilder.exe+6779374 FXParticleSystem::CategoryModuleTemplate<6>::operator=+2599758
+
+Bytes around EIP:
+7746e173 c2 f0 0f b1 0e 8b 75 b0 3b c2 0f 85 bf 5c fe ff Âð.±.‹u°;Â.…¿\þÿ
+7746e183 83 65 c0 00 33 c0 89 45 c4 8b 06 83 f8 ff 74 03 ƒeÀ.3À‰EÄ‹.ƒøÿt.
+7746e193 ff 40 14 b8 82 03 fe 7f 8a 08 84 c9 0f 85 b0 2a ÿ@.¸‚.þŠ.„É.…°*
+7746e1a3 06 00 57 6a 00 83 fb ff 0f 84 f3 2a 06 00 53 e8 ..Wj.ƒûÿ.„ó*..Sè
+7746e1b3 f9 e4 01 00 3d 02 01 00 00 0f 84 f3 2a 06 00 85 ùä..=.....„ó*..…
+
+================================================================================
+EXCEPTION_ACCESS_VIOLATION:
+The thread tried to read from or write to a virtual
+address for which it does not have the appropriate access.
+Access address 0x00000000 was read from.
+
+Exception occured at
+009b864e Worldbuilder.exe+0x5b864e, FXParticleSystem::CategoryModuleTemplate<6>::operator=+0x1bbfae.
+
+Version: internal
+
+EAX:0x10942190 EBX:0x004054f2 ECX:0x00000000
+EDX:0x10942190 ESI:0x0018d3b8 EDI:0x0eae0228
+EIP:0x009b864e ESP:0x0018ca3c EBP:0x0018ca44
+Flags:%00000000000000010000001000000110
+CS:0x0023 DS:0x002b SS:0x002b
+ES:0x002b FS:0x0053 GS:0x002b
+
+CW:%0000000001111111
+SW:%0000000000100100
+TW:%1111111111111111
+ErrOfs:      0x0044d14a ErrSel:  0x00000023
+DataOfs:     0x0018c9dc DataSel: 0x0000002b
+Cr0NpxState: 0x0000c002
+ST(0) 0000000000000080ff3f 1.000000
+ST(1) 0000000000000080ff3f 1.000000
+ST(2) 00000000004b78c002c0 -12.029368
+ST(3) 0000000000000080ff3f 1.000000
+ST(4) 00000000002771c503c0 -24.680250
+ST(5) 0000000000000080fe3f 0.500000
+ST(6) 00000000000000000000 0.000000
+ST(7) 00000000003acd93febf -0.577350
+
+56 addresses:
+(unknown)(0): Worldbuilder.exe+5998158 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1818542
+(unknown)(0): Worldbuilder.exe+5999939 FXParticleSystem::CategoryModuleTemplate<6>::operator=+1820323
+(unknown)(0): Worldbuilder.exe+313937 IRegion2D::operator=+261886
+(unknown)(0): Worldbuilder.exe+332997 IRegion2D::operator=+280946
+(unknown)(0): Worldbuilder.exe+2378231 IRegion2D::operator=+2326180
+(unknown)(0): Worldbuilder.exe+2397478 IRegion2D::operator=+2345427
+(unknown)(0): Worldbuilder.exe+2476548 IRegion2D::operator=+2424497
+(unknown)(0): Worldbuilder.exe+2478389 IRegion2D::operator=+2426338
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+2351548 IRegion2D::operator=+2299497
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+36465 CallNextHookEx+177
+(unknown)(0): USER32.dll+44797 GetAncestor+461
+(unknown)(0): USER32.dll+37676 CallNextHookEx+1388
+(unknown)(0): USER32.dll+71352 GetCapture+696
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+72353 GetCapture+1697
+(unknown)(0): USER32.dll+78743 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+74345 (unknown)
+(unknown)(0): Worldbuilder.exe+2321892 IRegion2D::operator=+2269841
+(unknown)(0): MFC71.DLL+49134 (unknown)
+(unknown)(0): Worldbuilder.exe+2319920 IRegion2D::operator=+2267869
+(unknown)(0): MFC71.DLL+212164 (unknown)
+(unknown)(0): MFC71.DLL+188592 (unknown)
+(unknown)(0): Worldbuilder.exe+1235732 IRegion2D::operator=+1183681
+(unknown)(0): MFC71.DLL+188751 (unknown)
+(unknown)(0): MFC71.DLL+188856 (unknown)
+(unknown)(0): MFC71.DLL+188918 (unknown)
+(unknown)(0): USER32.dll+36465 CallNextHookEx+177
+(unknown)(0): USER32.dll+44797 GetAncestor+461
+(unknown)(0): USER32.dll+37676 CallNextHookEx+1388
+(unknown)(0): USER32.dll+71352 GetCapture+696
+(unknown)(0): ntdll.dll+264662 KiUserCallbackDispatcher+54
+(unknown)(0): USER32.dll+72353 GetCapture+1697
+(unknown)(0): USER32.dll+78743 CreateWindowExA+55
+(unknown)(0): MFC71.DLL+74246 (unknown)
+(unknown)(0): MFC71.DLL+46220 (unknown)
+(unknown)(0): MFC71.DLL+46401 (unknown)
+(unknown)(0): Worldbuilder.exe+2319761 IRegion2D::operator=+2267710
+(unknown)(0): Worldbuilder.exe+2716652 IRegion2D::operator=+2664601
+(unknown)(0): MFC71.DLL+66097 (unknown)
+(unknown)(0): MFC71.DLL+11922 (unknown)
+(unknown)(0): Worldbuilder.exe+2708646 IRegion2D::operator=+2656595
+(unknown)(0): MFC71.DLL+214732 (unknown)
+(unknown)(0): MFC71.DLL+203029 (unknown)
+(unknown)(0): Worldbuilder.exe+2703853 IRegion2D::operator=+2651802
+(unknown)(0): MFC71.DLL+11699 (unknown)
+(unknown)(0): Worldbuilder.exe+2696428 IRegion2D::operator=+2644377
+(unknown)(0): MFC71.DLL+208822 (unknown)
+(unknown)(0): KERNEL32.DLL+97284 BaseThreadInitThunk+36
+(unknown)(0): ntdll.dll+374191 RtlInitializeExceptionChain+143
+(unknown)(0): ntdll.dll+374138 RtlInitializeExceptionChain+90
+
+Bytes around EIP:
+009b862e e5 01 8b 4d fc e8 d8 35 db ff 8b e5 5d c3 cc cc å.‹MüèØ5Ûÿ‹å]ÃÌÌ
+009b863e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b864e 8b 11 8b 4d 08 ff 52 68 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRh‹å]Â..ÌÌ
+009b865e cc cc 55 8b ec 51 89 4d fc 8b 45 fc 50 8b 4d 08 ÌÌU‹ìQ‰Mü‹EüP‹M.
+009b866e 8b 11 8b 4d 08 ff 52 6c 8b e5 5d c2 04 00 cc cc ‹.‹M.ÿRl‹å]Â..ÌÌ
